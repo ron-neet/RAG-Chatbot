@@ -1,8 +1,8 @@
 langchain
 langchain-community
-langchain-openai
+langchain-ollama
 langchain-text-splitters
-chromadb
+langchain-chroma
 pypdf
 fastapi
 uvicorn
@@ -10,3 +10,5 @@ python-dotenv
 pydantic
 openai
 pymupdf
+langchain-huggingface
+sentence-transformers

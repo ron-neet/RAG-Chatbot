@@ -1,5 +1,5 @@
 from backend.rag.retriever import get_retriever
-from langchain_openai import ChatOpenAI
+from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage
 
 def rag_answer(question: str):
@@ -19,6 +19,6 @@ def rag_answer(question: str):
     {question}
     """
 
-    llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+    llm = ChatOllama(model="llama3", temperature=0)
     response = llm.invoke([HumanMessage(content=prompt)])
     return response.content
